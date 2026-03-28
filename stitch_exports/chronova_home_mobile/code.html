@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CHRONOVA | Timeless Horology</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#181c20",
+              "surface-container-lowest": "#0e0e0e",
+              "primary-container": "#c5a059",
+              "on-secondary-fixed-variant": "#454747",
+              "primary-fixed": "#ffdea5",
+              "on-tertiary": "#2d3135",
+              "primary-fixed-dim": "#e9c176",
+              "inverse-on-surface": "#313030",
+              "surface-tint": "#e9c176",
+              "tertiary-fixed": "#e0e2e8",
+              "tertiary": "#c4c6cc",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary-container": "#b5b5b5",
+              "on-error": "#690005",
+              "on-surface": "#e5e2e1",
+              "secondary-container": "#454747",
+              "error-container": "#93000a",
+              "primary": "#e9c176",
+              "surface": "#131313",
+              "outline": "#9a8f80",
+              "tertiary-fixed-dim": "#c4c6cc",
+              "surface-container": "#201f1f",
+              "on-primary-container": "#4e3700",
+              "outline-variant": "#4e4639",
+              "secondary-fixed-dim": "#c6c6c6",
+              "on-background": "#e5e2e1",
+              "on-primary-fixed": "#261900",
+              "on-error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#5d4201",
+              "surface-dim": "#131313",
+              "on-tertiary-fixed-variant": "#44474b",
+              "surface-bright": "#393939",
+              "inverse-surface": "#e5e2e1",
+              "surface-variant": "#353534",
+              "tertiary-container": "#a2a5aa",
+              "on-primary": "#412d00",
+              "error": "#ffb4ab",
+              "inverse-primary": "#775a19",
+              "surface-container-low": "#1c1b1b",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-secondary": "#2f3131",
+              "surface-container-highest": "#353534",
+              "on-tertiary-container": "#383b40",
+              "secondary": "#c6c6c6",
+              "secondary-fixed": "#e2e2e2",
+              "on-surface-variant": "#d1c5b4",
+              "background": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #e9c176, #ffdea5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gold-gradient {
+            background: linear-gradient(135deg, #e9c176 0%, #c5a059 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- Announcement Bar -->
+<div class="bg-surface-container-lowest text-primary py-2 px-4 text-center">
+<p class="font-label text-[10px] tracking-[0.2em] uppercase font-bold">Complimentary Global Shipping on all Heritage Pieces</p>
+</div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 py-4 bg-[#131313] dark:bg-[#0e0e0e] z-50 glass-nav">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="menu">menu</span>
+</div>
+<div class="text-2xl font-['Noto_Serif'] italic font-bold text-[#e9c176] tracking-tighter uppercase">CHRONOVA</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</header>
+<main class="pt-16 pb-20">
+<!-- Hero Section -->
+<section class="relative h-[751px] flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury Watch Hero" class="w-full h-full object-cover brightness-[0.4]" data-alt="Macro close-up of a high-end mechanical watch movement with gold gears and intricate details, dark moody atmosphere with dramatic golden highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEATqzVcpMc1vk064XGVH3ymoPC6ZoGxWGPX6eiWiLUqTHFm5Sn5iHCj0hCa8JGPgcgfLnaOq8LD6uGoMTs0F3ZxwmTrM0Q7Y2SAvpwALsgkbcWxd7EXPUk6AaoZiume7HXq2n9V5h2fYl6XH7aSS_Rrx41n4ExnL_LHmYY-3wLMkE7Br0Iw3xrceYrpQxY6ytuEmlXtOYp-_jve52oXnBx3_wj8-bsQOwVQ_ER5jtJBaMe8fH2gyA7iw0lKlX8Sxs9ryBffBVNfUa"/>
+</div>
+<div class="relative z-10 px-8 pb-16 w-full">
+<h1 class="font-headline italic text-4xl md:text-6xl text-white leading-tight mb-6">
+                    Timeless <br/> <span class="text-gold-gradient">Elegance</span> <br/> on Your Wrist
+                </h1>
+<div class="flex flex-col gap-4">
+<button class="btn-gold-gradient text-on-primary font-label font-bold py-4 px-8 uppercase tracking-widest text-sm rounded-none">Shop Now</button>
+<button class="bg-transparent border border-outline-variant text-white font-label font-bold py-4 px-8 uppercase tracking-widest text-sm rounded-none backdrop-blur-sm">Explore Heritage</button>
+</div>
+</div>
+</section>
+<!-- Featured Categories (Bento Style) -->
+<section class="px-6 py-20 bg-surface">
+<h2 class="font-headline italic text-2xl text-primary mb-10 tracking-widest">COLLECTIONS</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="relative aspect-[3/4] bg-surface-container-high overflow-hidden col-span-1">
+<img alt="Men's Collection" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Sophisticated man in a tailored suit checking a luxury silver watch, blurred city background, premium editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB-7g1ge_Z441Rlomi7wf3BEsSlrr-pS6AXzOlXCuGX3UJ4SW9HOvEL47DCSJKHHvVRDNfm78HDMcH1ebTQzo2ec-43tjLlJCFqEfDtpvNUXLAFISh5KkTYDsiupDWbIr8O7IiALrsi5mDF-rQa5sWzTfAzCa9GXN75A0GNjDjZdfHGynUjrNjwni6wNabVQAy8o-u8U-WzWhwjldY7sZ0bFxVTuhyL1c2l-WEC_iWi9f4tLNrmYJ2aa8x6M74J6BY11H1cZcV4DC2"/>
+<div class="absolute bottom-4 left-4">
+<p class="font-label text-xs text-white uppercase tracking-widest font-bold">Men's</p>
+</div>
+</div>
+<div class="relative aspect-[3/4] bg-surface-container-high overflow-hidden col-span-1">
+<img alt="Women's Collection" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Elegant woman's wrist with a thin gold luxury watch and delicate jewelry, soft cinematic lighting, warm tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfSq7xZ2dTpp9voIKTLkLht8RRa1MnpcO7IrNIcK9co7gCnFbWhe78EIe_S74XDypKDwSjl3caJ_RctIDC34gAAchf4XZf6akEabmo-8MLCgqUaRO9CQkryHGkkChlY_Eyp17hudF1CVaqnpfh7EowecigoNchTRefRiA37RpnULjtQwJvI5ZDKUrMpKjg8yy5n_uH_njwLIgEyKsoiT5DKvx_QKmPHbAnfomgYJ5w-JmrQwUZFt76ZJJcEqRmRtE3envvsV26sgAb"/>
+<div class="absolute bottom-4 left-4">
+<p class="font-label text-xs text-white uppercase tracking-widest font-bold">Women's</p>
+</div>
+</div>
+<div class="relative aspect-video bg-surface-container-high overflow-hidden col-span-2">
+<img alt="Luxury Collection" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Ultra-luxury tourbillon watch displayed on a dark velvet cushion with professional studio lighting highlighting the gold bezel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDndJbfqUNkizMD2V4YwqGWnljQ8ZVm0NziXt2881VOQmivNFKLt2mF5_7tNwkOWeOMc-K8eEgcVfonqDMAzE8nfWNXSspMinE9YrB7xWTsfJHT50G8iHmpcMQ6qmx9gIYI5i68Jg0MgjobZPRX7OtSd5Btu_kUswe0zu5YGphE9RocCm--q6rlbBlTl2ZtVjfnciZ18Aev-dpHXWAAjJVnanTPo_iDiFzLWDMYnlkG6Wj4KTMLvmH0zfLbBBp6_qEbGYTgJxpFtlT"/>
+<div class="absolute bottom-4 left-4">
+<p class="font-label text-xs text-white uppercase tracking-widest font-bold">Exotic Luxury</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trending Products -->
+<section class="py-20 bg-surface-container-low">
+<div class="px-6 mb-10 flex justify-between items-end">
+<div>
+<span class="text-primary font-label text-[10px] tracking-[0.3em] uppercase">Current Favorites</span>
+<h2 class="font-headline italic text-3xl text-white mt-2">Trending</h2>
+</div>
+</div>
+<div class="flex overflow-x-auto px-6 gap-6 no-scrollbar">
+<!-- Card 1 -->
+<div class="min-w-[280px] group">
+<div class="bg-surface relative overflow-hidden aspect-square mb-6">
+<img alt="Watch 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Minimalist luxury watch with a black leather strap and rose gold face on a dark stone background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW17RuMmhu51D21Hn8m3ilAw8ban9FArfVOsfZV5PINMrICigeC8u-88YViAHA1YMDVG7W0i9dQhPYj4s0cNmTTliyoRzFcsmEBT0GQXP8qWGP9_TsyBpT-VFRubYC8Cz1ChNbgJC-1OG2OmITIv6OALkP_JA16M-ZFonfXawzEmo2__bJF0IurC0y7vs7piRGcZ9wWP57q887liJd2Nh6o_A3a4QUi-T2_Bmpvb7QXslalG3wJGamfXM_rtK0k5A4JIK84DsrUnaF"/>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary p-3 rounded-none shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<p class="font-label text-[10px] text-primary uppercase tracking-widest mb-1">CHRONOVA HERITAGE</p>
+<h3 class="font-headline text-lg text-white mb-2">Oceanic Deep 44</h3>
+<div class="flex justify-between items-center">
+<span class="font-body text-on-surface-variant">$4,250.00</span>
+<div class="flex items-center text-primary gap-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[10px] font-bold">4.9</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="min-w-[280px] group">
+<div class="bg-surface relative overflow-hidden aspect-square mb-6">
+<img alt="Watch 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Classic silver mechanical watch with exposed internal gears, dark blue background, high-end commercial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsONR1HuR-3jBoAyKHgX70AjIWOpbOhLTpoqh_FmB4iedWPe9jZTlSZ1zFXVsGM7ifk6bZ5JKWNgQ1t_4RfzQp6nyPN4eu0G5YYytcEuTFiIxZnbZdV8DBo7FUUZYYtLAJaQdNueKGmbPLXsxOP9FgNFUcZwxsXLzhypFOeZB8aKw19TWh6D9qTDmWd-JwuV5diWvmo_0P8yZSnn9CdhlHobhkbKeim5W7oyQl8shnkeYMsaG7SIiKe8D9nceVY2QL_asNG903eEZl"/>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary p-3 rounded-none shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<p class="font-label text-[10px] text-primary uppercase tracking-widest mb-1">BESPOKE SERIES</p>
+<h3 class="font-headline text-lg text-white mb-2">The Alchemist Gold</h3>
+<div class="flex justify-between items-center">
+<span class="font-body text-on-surface-variant">$8,900.00</span>
+<div class="flex items-center text-primary gap-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[10px] font-bold">5.0</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Promo Banner -->
+<section class="relative h-64 mx-6 my-20 flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/20 z-0">
+<img alt="Promo Background" class="w-full h-full object-cover mix-blend-overlay opacity-50" data-alt="Close up of watch hands moving smoothly over a luxury watch face, blurred dark gold lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrwYIP4ozBs1tIMKqgFVYY2Pas71Iu-KhJPzzTC21nQFzQnNvz7Q1xKqQ3gz8PYbYbQ-Ihm5gepiShFpcakJzvAwKa1PTrGC8a_mu5KeMKq7pnOOjJc_2iQL7-bwQKi5xljMhbbu-zi6uyI4oaGYGjuoWAtU6o2lczY2vRs_gUb6Wc6qtO7PSAQAapvgZnfKr3ovp1Roc8dksowrduoItkLjR_8XR-NYWVMgP4ZR8LeRZEEYpD-6G0pVwBv_s3ZwCy7NQUNQ4gm_VC"/>
+</div>
+<div class="relative z-10 text-center px-6">
+<h2 class="font-headline italic text-2xl text-white mb-4">Exclusive Collection</h2>
+<p class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-6">Up to 30% Off Seasonal Curations</p>
+<button class="border-b border-primary text-primary font-label text-[10px] tracking-widest uppercase pb-1">View Sale</button>
+</div>
+</section>
+<!-- New Arrivals (Slider) -->
+<section class="py-20 bg-surface">
+<div class="px-6 mb-10">
+<h2 class="font-headline italic text-3xl text-white">New Arrivals</h2>
+<div class="w-12 h-[1px] bg-primary mt-4"></div>
+</div>
+<div class="px-6 space-y-12">
+<div class="flex flex-col gap-6">
+<div class="bg-surface-container-high aspect-[4/5] overflow-hidden">
+<img alt="New Arrival 1" class="w-full h-full object-cover" data-alt="Sleek black smart watch with a high-resolution display, minimalist aesthetic, positioned on a dark textured surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1xKvdSOmCpHXcF9pR_D5oYSGxVTOt-mZSKCnlKMmpT8_iAUTd4UDGvCQ_CXSQWegqzaBpCjaXPw8m5lnnJgSKJna7C2LPXM4wbm2SJJL_uOOrjLHIzzAG3exuSVQPGhm8J9qCrGxLUe_DOaqXx4pHCN8UntSHbKdCRxBy6S5h5gemo-tCe6lJwQN0evH4IEOsSHBTUNJ7N_AiDB0BBPL0-9blFaNkewUbVNASs4kTssvNfkRBZwaWWffhE-1EXt6wnsKT5s4Oqfuv"/>
+</div>
+<div>
+<p class="font-label text-primary uppercase tracking-widest text-[10px] mb-2">Modernist Edge</p>
+<h3 class="font-headline text-2xl text-white italic">Chronova Nexus S</h3>
+<p class="font-body text-on-surface-variant text-sm mt-4 leading-relaxed">The intersection of timeless aesthetics and next-generation connectivity. Precision redefined.</p>
+<button class="mt-6 font-label text-primary uppercase text-[10px] tracking-widest border border-outline-variant px-6 py-3">Inquire Now</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-20 bg-surface-container-lowest">
+<div class="grid grid-cols-2 gap-px bg-outline-variant/10">
+<div class="bg-surface-container-lowest p-8 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl" data-icon="verified">verified</span>
+<h4 class="font-label text-[10px] tracking-widest uppercase text-white font-bold mb-2">Authentic</h4>
+<p class="font-body text-[10px] text-on-surface-variant">Certified Swiss movements</p>
+</div>
+<div class="bg-surface-container-lowest p-8 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl" data-icon="lock">lock</span>
+<h4 class="font-label text-[10px] tracking-widest uppercase text-white font-bold mb-2">Secure</h4>
+<p class="font-body text-[10px] text-on-surface-variant">End-to-end encryption</p>
+</div>
+<div class="bg-surface-container-lowest p-8 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl" data-icon="local_shipping">local_shipping</span>
+<h4 class="font-label text-[10px] tracking-widest uppercase text-white font-bold mb-2">Fast Delivery</h4>
+<p class="font-body text-[10px] text-on-surface-variant">Priority global freight</p>
+</div>
+<div class="bg-surface-container-lowest p-8 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl" data-icon="shield">shield</span>
+<h4 class="font-label text-[10px] tracking-widest uppercase text-white font-bold mb-2">Warranty</h4>
+<p class="font-body text-[10px] text-on-surface-variant">Lifetime care program</p>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-24 px-8 bg-surface-container-high text-center">
+<h2 class="font-headline italic text-3xl text-white mb-4">The Journal</h2>
+<p class="font-body text-on-surface-variant text-sm mb-10 max-w-xs mx-auto">Be the first to receive invitations to our private auctions and heritage releases.</p>
+<form class="space-y-4 max-w-md mx-auto">
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary text-white placeholder:text-on-surface-variant/50 text-[10px] tracking-[0.2em] py-4 rounded-none outline-none transition-colors" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="w-full py-4 text-[10px] tracking-[0.3em] uppercase font-bold text-on-primary btn-gold-gradient" type="submit">Subscribe</button>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full pt-20 pb-24 px-8 flex flex-col items-center text-center gap-12">
+<div class="font-['Noto_Serif'] text-lg text-[#e9c176] tracking-widest font-bold">CHRONOVA</div>
+<nav class="flex flex-col gap-4">
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Sustainability</a>
+</nav>
+<div class="flex gap-8">
+<span class="material-symbols-outlined text-white/40 text-xl cursor-pointer hover:text-primary">public</span>
+<span class="material-symbols-outlined text-white/40 text-xl cursor-pointer hover:text-primary">schedule</span>
+<span class="material-symbols-outlined text-white/40 text-xl cursor-pointer hover:text-primary">diamond</span>
+</div>
+<p class="font-['Manrope'] text-[8px] tracking-[0.2em] text-white/20">© 2024 CHRONOVA HOROLOGY. ALL RIGHTS RESERVED.</p>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 px-4 bg-[#131313]/90 dark:bg-[#0e0e0e]/90 glass-nav shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center justify-center text-[#e9c176] scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/40 hover:text-[#e9c176]/80" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/40 hover:text-[#e9c176]/80" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/40 hover:text-[#e9c176]/80" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Account</span>
+</a>
+</nav>
+</body></html>

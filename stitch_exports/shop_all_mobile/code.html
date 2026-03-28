@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#181c20",
+              "surface-container-lowest": "#0e0e0e",
+              "primary-container": "#c5a059",
+              "on-secondary-fixed-variant": "#454747",
+              "primary-fixed": "#ffdea5",
+              "on-tertiary": "#2d3135",
+              "primary-fixed-dim": "#e9c176",
+              "inverse-on-surface": "#313030",
+              "surface-tint": "#e9c176",
+              "tertiary-fixed": "#e0e2e8",
+              "tertiary": "#c4c6cc",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary-container": "#b5b5b5",
+              "on-error": "#690005",
+              "on-surface": "#e5e2e1",
+              "secondary-container": "#454747",
+              "error-container": "#93000a",
+              "primary": "#e9c176",
+              "surface": "#131313",
+              "outline": "#9a8f80",
+              "tertiary-fixed-dim": "#c4c6cc",
+              "surface-container": "#201f1f",
+              "on-primary-container": "#4e3700",
+              "outline-variant": "#4e4639",
+              "secondary-fixed-dim": "#c6c6c6",
+              "on-background": "#e5e2e1",
+              "on-primary-fixed": "#261900",
+              "on-error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#5d4201",
+              "surface-dim": "#131313",
+              "on-tertiary-fixed-variant": "#44474b",
+              "surface-bright": "#393939",
+              "inverse-surface": "#e5e2e1",
+              "surface-variant": "#353534",
+              "tertiary-container": "#a2a5aa",
+              "on-primary": "#412d00",
+              "error": "#ffb4ab",
+              "inverse-primary": "#775a19",
+              "surface-container-low": "#1c1b1b",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-secondary": "#2f3131",
+              "surface-container-highest": "#353534",
+              "on-tertiary-container": "#383b40",
+              "secondary": "#c6c6c6",
+              "secondary-fixed": "#e2e2e2",
+              "on-surface-variant": "#d1c5b4",
+              "background": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+        }
+        h1, h2, h3, .serif-italic {
+            font-family: 'Noto Serif', serif;
+            font-style: italic;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface select-none">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 py-4 bg-[#131313] z-50 glass-header">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e9c176] cursor-pointer">menu</span>
+</div>
+<div class="text-2xl font-['Noto_Serif'] italic font-bold text-[#e9c176] tracking-tighter">CHRONOVA</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e9c176] cursor-pointer">shopping_bag</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-4 max-w-md mx-auto">
+<!-- Page Header & Editorial Intro -->
+<section class="mb-12">
+<h1 class="text-4xl leading-tight mb-2 text-on-surface">The <span class="text-primary">Curated</span> Collection</h1>
+<p class="font-body text-on-surface-variant text-sm tracking-wide leading-relaxed opacity-80">
+                Explore our selection of horological masterpieces, where heritage meets contemporary precision.
+            </p>
+</section>
+<!-- Filter & Sort Bar -->
+<section class="mb-8 flex items-center justify-between sticky top-20 bg-surface/95 py-2 z-40">
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-highest rounded-full border border-outline-variant/15">
+<span class="material-symbols-outlined text-sm text-primary">filter_list</span>
+<span class="text-xs font-label uppercase tracking-widest font-bold">Filters</span>
+</button>
+<div class="flex items-center gap-4">
+<span class="text-[10px] font-label uppercase tracking-tighter text-on-surface-variant">Sorting: Newest</span>
+<span class="material-symbols-outlined text-primary">keyboard_arrow_down</span>
+</div>
+</section>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 gap-12">
+<!-- Product Card 1 -->
+<article class="group relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6 relative">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-primary text-on-primary px-3 py-1 text-[10px] font-label font-bold tracking-widest uppercase rounded-sm">Limited</span>
+</div>
+<img alt="Luxury Gold Watch" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="close-up of a high-end gold watch with intricate mechanical details on a dark velvet surface with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9nYep9BRnNxBjuz5i40MyJzWELCcfKr4UoySi6eUQiq4sbPngQvmhAwh_ehDmy4ISx7VJt0iASej5H-Ku1kfvcegjZom_GyThaJSv6B5_MSZSaBvIpGLE_7szQ18D0bflV5zAu6pqH2p5gzfLw9vms_vdXe3FFkgpU3T3a8eHCML-dgO-vy1iTkFYFcn18HQpwty51CUjHlgP96k48sr-LuJny2bDyCQIGcT60b9cwJe_CVeEspmhlBVf122EdDOkECi1MEibEWED"/>
+<button class="absolute bottom-4 right-4 bg-surface-container-highest/80 backdrop-blur-md p-3 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-[10px] font-label uppercase tracking-[0.2em] text-primary">Vanguard Series</p>
+<h3 class="text-xl text-on-surface">The Celestial Gold Edition</h3>
+<p class="text-lg font-body text-on-surface-variant">$24,500.00</p>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6 relative">
+<img alt="Minimalist Silver Watch" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="minimalist modern silver watch with a black leather strap on a grey slate background with soft ambient shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGe8AVAstlnesUfoUAYexTN2tcmxnXxazZhpUBFL66tBGmknxS38IyigdLHY9vj97ukR0ocxd2YL8e1Gs1APaJ4oHEElGnYoQ5RhzDH53ojXlEOVP9cdV5qINglkF51_X_4qzp_-Kt-GESORt8OaIPNdkD2orzGHKFVgYydyCm2v73WgX5VCaRUNV6lqhboY6QCTjC70JLNjFXkVP-Zp6LxuGX1jBifufQIxd0To4WtB9qtRqgKg1AL4WWawQYFmRy6t0fpLQn8lL4"/>
+<button class="absolute bottom-4 right-4 bg-surface-container-highest/80 backdrop-blur-md p-3 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-[10px] font-label uppercase tracking-[0.2em] text-primary">Heritage Line</p>
+<h3 class="text-xl text-on-surface">Monolith Silver Onyx</h3>
+<p class="text-lg font-body text-on-surface-variant">$8,200.00</p>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6 relative">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-surface-container-highest text-primary border border-primary/30 px-3 py-1 text-[10px] font-label font-bold tracking-widest uppercase rounded-sm backdrop-blur-md">New Arrival</span>
+</div>
+<img alt="Sport Chronograph" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="luxury sports chronograph watch with titanium case and sapphire glass showing luminous markers in a dim atmospheric setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr756yj974k6ckWVJeG4mdWDYYu8a541g8lSyARMLf-ReK4ZlAtKuMGGyANYoKAOiMh3HzXi1Cduzp1By1xcMnH9z1xdyQ7UFXJ1JxhOV1P6RSlWRYhAnFe2g6i4O9s9FjzIPU-rhT5mlzdTsCgdvCFz3Vw4gkvYQvqnPzT9CJoCi_0KY4TPY1-xYtG4j1QUnZMKj5ge-soBGTVVGewLhit4uFRnOPBjTCVF6bZY35ofGkOjitSysc_L0EfKXAZO-khVZcJQdG0tvA"/>
+<button class="absolute bottom-4 right-4 bg-surface-container-highest/80 backdrop-blur-md p-3 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-[10px] font-label uppercase tracking-[0.2em] text-primary">Aero Dynamic</p>
+<h3 class="text-xl text-on-surface">Titanium Cloud Racer</h3>
+<p class="text-lg font-body text-on-surface-variant">$15,900.00</p>
+</div>
+</article>
+</div>
+<!-- Load More Section -->
+<section class="mt-20 flex flex-col items-center gap-6">
+<div class="w-12 h-[1px] bg-outline-variant/30"></div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-sm text-xs font-label font-bold uppercase tracking-[0.2em] active:scale-95 transition-all">
+                Reveal More
+            </button>
+<p class="text-[10px] font-label text-on-surface-variant/60 uppercase tracking-widest">Showing 3 of 48 masterpieces</p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-24 px-8 bg-[#0e0e0e] flex flex-col items-center text-center gap-12 mb-16">
+<div class="font-['Noto_Serif'] text-lg text-[#e9c176] italic tracking-widest">CHRONOVA</div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-['Manrope'] text-xs tracking-widest uppercase text-white/40 hover:text-white transition-colors" href="#">Sustainability</a>
+</nav>
+<p class="font-['Manrope'] text-[10px] tracking-widest uppercase text-white/20">© 2024 CHRONOVA HOROLOGY. ALL RIGHTS RESERVED.</p>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 px-4 bg-[#131313]/90 dark:bg-[#0e0e0e]/90 glass-effect backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
+<div class="flex flex-col items-center justify-center text-white/40 hover:text-[#e9c176]/80 transition-all cursor-pointer">
+<span class="material-symbols-outlined">home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e9c176] scale-110 transition-all cursor-pointer">
+<span class="material-symbols-outlined">search</span>
+</div>
+<div class="flex flex-col items-center justify-center text-white/40 hover:text-[#e9c176]/80 transition-all cursor-pointer">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<div class="flex flex-col items-center justify-center text-white/40 hover:text-[#e9c176]/80 transition-all cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+</div>
+</nav>
+<!-- Filter Modal (Hidden by Default/Mockup state) -->
+<div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden" id="filter-drawer">
+<div class="absolute bottom-0 w-full bg-surface rounded-t-xl p-8 max-h-[707px] overflow-y-auto">
+<div class="flex justify-between items-center mb-8">
+<h2 class="text-2xl text-primary">Refine Selection</h2>
+<span class="material-symbols-outlined cursor-pointer" onclick="document.getElementById('filter-drawer').classList.add('hidden')">close</span>
+</div>
+<div class="space-y-8">
+<div>
+<h4 class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant mb-4">Brand</h4>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 border border-primary text-primary text-xs font-label uppercase">Chronova Luxe</button>
+<button class="px-4 py-2 border border-outline-variant/30 text-on-surface-variant text-xs font-label uppercase">Vanguard</button>
+<button class="px-4 py-2 border border-outline-variant/30 text-on-surface-variant text-xs font-label uppercase">Heritage</button>
+</div>
+</div>
+<div>
+<h4 class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant mb-4">Price Range</h4>
+<div class="relative w-full h-1 bg-surface-container-highest rounded-full">
+<div class="absolute left-1/4 right-1/4 h-full bg-primary"></div>
+<div class="absolute left-1/4 top-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full shadow-lg"></div>
+<div class="absolute right-1/4 top-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full shadow-lg"></div>
+</div>
+<div class="flex justify-between mt-4 text-xs font-label tracking-widest">
+<span>$5,000</span>
+<span>$45,000+</span>
+</div>
+</div>
+<div class="pt-8">
+<button class="w-full bg-primary text-on-primary py-4 font-label font-bold uppercase tracking-widest">Apply Filters</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

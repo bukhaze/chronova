@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: var(--font-noto-serif);
+  --font-body: var(--font-manrope);
+  --font-label: var(--font-manrope);
+
+  --color-primary: #e9c176;
+  --color-primary-container: #c5a059;
+  --color-on-primary: #412d00;
+  --color-on-primary-container: #4e3700;
+  
+  --color-surface: #131313;
+  --color-on-surface: #e5e2e1;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  
+  --color-outline: #9a8f80;
+  --color-outline-variant: #4e4639;
+  
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+
+  --border-radius-none: 0;
+  --border-radius-sm: 0.125rem;
+  --border-radius-md: 0.25rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-xl: 0.75rem;
+}
+
+:root {
+  --background: #131313;
+  --foreground: #e5e2e1;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+}
+
+/* Glassmorphism utility */
+.glass-nav {
+  @apply backdrop-blur-md bg-surface/80;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(to right, #e9c176, #ffdea5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gold-gradient {
+  background: linear-gradient(135deg, #e9c176 0%, #c5a059 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

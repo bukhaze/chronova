@@ -11,7 +11,7 @@ import { getProductById } from "@/data/products";
 import type { Product } from "@/data/products";
 
 export default function WishlistPage() {
-  const { items: wishlistIds, toggle, clearWishlist } = useWishlist();
+  const { ids: wishlistIds, toggle, clear: clearWishlist } = useWishlist();
   const { addItem } = useCart();
   const [wishlistProducts, setWishlistProducts] = useState<Product[]>([]);
   const [mounted, setMounted] = useState(false);

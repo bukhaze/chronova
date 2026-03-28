@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Noto_Serif, Manrope } from "next/font/google";
 import "./globals.css";
 
+import Providers from "@/components/Providers";
+
 const notoSerif = Noto_Serif({
   variable: "--font-noto-serif",
   subsets: ["latin"],
@@ -37,7 +39,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col font-body bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
